@@ -8,12 +8,11 @@ public class Order : Entity
 
     public void AddProduct(Product product)
     {
-        Products.Add(product);
-        // calcular total dos items
+        // adicionar e calcular valor total dos produtos;
     }
 
     public void RemoveProduct()
     {
-
+        // remover produto do pedido;
     }
 }
