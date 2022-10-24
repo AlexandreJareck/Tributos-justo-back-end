@@ -38,7 +38,7 @@ public class ProductController : MainController
         if (!ModelState.IsValid)
             return CustomResponse(ModelState);
 
-        await productService.Add(_mapper.Map<Client>(clientDTO));
+        await _productService.Add(_mapper.Map<Product>(clientDTO));
 
         return CustomResponse(clientDTO);
     }
