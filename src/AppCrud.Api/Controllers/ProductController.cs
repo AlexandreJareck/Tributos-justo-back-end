@@ -25,7 +25,7 @@ public class ProductController : MainController
         _mapper = mapper;
     }
 
-    [HttpGet]
+    [HttpGet("{id:guid}")]
     public async Task<ActionResult<ProductDTO>> Get(Guid id)
     {
         return _mapper.Map<ProductDTO>(await _productRepository.GetById(id));
@@ -42,7 +42,7 @@ public class ProductController : MainController
         return CustomResponse(clientDTO);
     }
 
-    [HttpPut]
+    [HttpPut("{id:guid}")]
     public async Task<ActionResult<ProductDTO>> Update(Guid id, ProductDTO productDTO)
     {
         if (id != productDTO.Id)
@@ -59,7 +59,7 @@ public class ProductController : MainController
         return CustomResponse(productDTO);
     }
 
-    [HttpDelete]
+    [HttpDelete("{id:guid}")]
     public async Task<ActionResult<ClientDTO>> Remove(Guid id)
     {
         var clientDTO = _mapper.Map<ClientDTO>(await _productRepository.GetById(id));

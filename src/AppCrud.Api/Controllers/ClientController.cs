@@ -25,7 +25,7 @@ namespace AppCrud.Api.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet]
+        [HttpGet("{id:guid}")]
         public async Task<ActionResult<ClientDTO>> Get(Guid id)
         {
             return _mapper.Map<ClientDTO>(await _clientRepository.GetById(id));
@@ -59,7 +59,7 @@ namespace AppCrud.Api.Controllers
             return CustomResponse(clientDTO);
         }
 
-        [HttpDelete]
+        [HttpDelete("{id:guid}")]
         public async Task<ActionResult<ClientDTO>> Remove(Guid id)
         {
             var clientDTO = _mapper.Map<ClientDTO>(await _clientRepository.GetById(id));
