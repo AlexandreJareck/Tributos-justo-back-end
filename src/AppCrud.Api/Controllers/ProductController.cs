@@ -31,7 +31,6 @@ public class ProductController : MainController
         return _mapper.Map<ProductDTO>(await _productRepository.GetById(id));
     }
 
-
     [HttpPost]
     public async Task<ActionResult<ProductDTO>> Add(ProductDTO clientDTO)
     {
@@ -41,5 +40,35 @@ public class ProductController : MainController
         await _productService.Add(_mapper.Map<Product>(clientDTO));
 
         return CustomResponse(clientDTO);
+    }
+
+    [HttpPut]
+    public async Task<ActionResult<ProductDTO>> Update(Guid id, ProductDTO productDTO)
+    {
+        if (id != productDTO.Id)
+        {
+            NotifyErrors("Id inválido!");
+            return CustomResponse(productDTO);
+        }
+
+        if (!ModelState.IsValid)
+            return CustomResponse(ModelState);
+
+        await _productService.Update(_mapper.Map<Product>(productDTO));
+
+        return CustomResponse(productDTO);
+    }
+
+    [HttpDelete]
+    public async Task<ActionResult<ClientDTO>> Remove(Guid id)
+    {
+        var clientDTO = _mapper.Map<ClientDTO>(await _productRepository.GetById(id));
+
+        if (clientDTO == null)
+            return NotFound();
+
+        await _productService.Remove(id);
+
+        return CustomResponse();
     }
 }
