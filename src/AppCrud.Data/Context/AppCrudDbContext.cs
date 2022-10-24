@@ -12,6 +12,7 @@ public class AppCrudDbContext : DbContext
 
     public DbSet<Product> Products { get; set; }
     public DbSet<Client> Clients { get; set; }
+    public DbSet<Order> Orders { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
