@@ -1,0 +1,12 @@
+C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\bin\Debug\net6.0\AppCrud.Business.deps.json
+C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\bin\Debug\net6.0\AppCrud.Business.dll
+C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\bin\Debug\net6.0\AppCrud.Business.pdb
+C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.csproj.AssemblyReference.cache
+C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.AssemblyInfoInputs.cache
+C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.AssemblyInfo.cs
+C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.csproj.CoreCompileInputs.cache
+C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.dll
+C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\obj\Debug\net6.0\refint\AppCrud.Business.dll
+C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.pdb
+C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\obj\Debug\net6.0\ref\AppCrud.Business.dll
