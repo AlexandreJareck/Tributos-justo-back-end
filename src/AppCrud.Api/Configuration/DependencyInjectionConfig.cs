@@ -16,9 +16,11 @@ namespace AppCrud.Api.Configuration
             services.AddScoped<AppCrudDbContext>();
             services.AddScoped<IClientRepository, ClientRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
 
             services.AddScoped<INotifier, Notifier>();
             services.AddScoped<IClientService, ClientService>();
+            services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IProductService, ProductService>();
 
             return services;
