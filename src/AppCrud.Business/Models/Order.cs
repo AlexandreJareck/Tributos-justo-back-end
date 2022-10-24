@@ -2,9 +2,15 @@
 
 public class Order : Entity
 {
+    public Order()
+    {
+        CreatedAt = DateTime.Now;
+    }
+
     public decimal TotalValue { get; set; }
     public Client Client { get; set; }
     public List<Product> Products { get; set; }
+    public DateTime? CreatedAt { get; set; }
 
     public void AddProduct(Product product)
     {

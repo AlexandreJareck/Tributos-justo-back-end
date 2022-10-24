@@ -4,9 +4,15 @@ namespace AppCrud.Business.Models;
 
 public class Client : Entity
 {
+    public Client()
+    {
+        CreatedAt = DateTime.Now;
+    }
+
     public string Name { get; set; }
 
     public string Document { get; set; }
+    public DateTime? CreatedAt { get; set; }
 }
 
 public class ClientValidation : AbstractValidator<Client>

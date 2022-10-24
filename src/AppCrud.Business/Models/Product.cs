@@ -4,9 +4,15 @@ namespace AppCrud.Business.Models;
 
 public class Product : Entity
 {
+    public Product()
+    {
+        CreatedAt = DateTime.Now;
+    }
+
     public decimal Price { get; set; }
     public string Description { get; set; }
     public int Quantity { get; set; }
+    public DateTime? CreatedAt { get; set; }
 }
 
 public class ProductValidation : AbstractValidator<Product>
