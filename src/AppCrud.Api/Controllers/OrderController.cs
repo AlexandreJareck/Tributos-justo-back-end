@@ -3,12 +3,12 @@ using AppCrud.Business.Interfaces;
 using AppCrud.Business.Interfaces.Repositories;
 using AppCrud.Business.Interfaces.Services;
 using AppCrud.Business.Models;
-using AppCrud.Business.Services;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppCrud.Api.Controllers
 {
+    [Route("api/pedidos")]
     public class OrderController : MainController
     {
         private readonly IOrderRepository _orderRepository;
@@ -24,38 +24,38 @@ namespace AppCrud.Api.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet("{guid:id}")]
+        [HttpGet("{id:guid}")]
         public async Task<ActionResult<OrderDTO>> Get(Guid id)
         {
             return _mapper.Map<OrderDTO>(await _orderRepository.GetById(id));
         }
 
-        [HttpPut]
-        public async Task<ActionResult<OrderDTO>> Update(Guid id, OrderDTO productDTO)
+        [HttpPut("{id:guid}")]
+        public async Task<ActionResult<OrderDTO>> Update(Guid id, OrderDTO orderDTO)
         {
-            if (id != productDTO.Id)
+            if (id != orderDTO.Id)
             {
                 NotifyErrors("Id inválido!");
-                return CustomResponse(productDTO);
+                return CustomResponse(orderDTO);
             }
 
             if (!ModelState.IsValid)
                 return CustomResponse(ModelState);
 
-            await _orderService.Update(_mapper.Map<Order>(productDTO));
+            await _orderService.Update(_mapper.Map<Order>(orderDTO));
 
-            return CustomResponse(productDTO);
+            return CustomResponse(orderDTO);
         }
 
         [HttpPost]
-        public async Task<ActionResult<OrderDTO>> Add(OrderDTO clientDTO)
+        public async Task<ActionResult<OrderDTO>> Add(OrderDTO orderDTO)
         {
             if (!ModelState.IsValid)
                 return CustomResponse(ModelState);
 
-            await _orderService.Add(_mapper.Map<Order>(clientDTO));
+            await _orderService.Add(_mapper.Map<Order>(orderDTO));
 
-            return CustomResponse(clientDTO);
+            return CustomResponse(orderDTO);
         }
     }
 }

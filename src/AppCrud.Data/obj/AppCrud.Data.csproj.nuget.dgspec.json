@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tributojusto\\source\\repos\\AppCrud\\src\\AppCrud.Data\\AppCrud.Data.csproj": {}
+    "D:\\Estudos\\Projetos\\Tributos-justo-back-end\\src\\AppCrud.Data\\AppCrud.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tributojusto\\source\\repos\\AppCrud\\src\\AppCrud.Business\\AppCrud.Business.csproj": {
+    "D:\\Estudos\\Projetos\\Tributos-justo-back-end\\src\\AppCrud.Business\\AppCrud.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tributojusto\\source\\repos\\AppCrud\\src\\AppCrud.Business\\AppCrud.Business.csproj",
+        "projectUniqueName": "D:\\Estudos\\Projetos\\Tributos-justo-back-end\\src\\AppCrud.Business\\AppCrud.Business.csproj",
         "projectName": "AppCrud.Business",
-        "projectPath": "C:\\Users\\tributojusto\\source\\repos\\AppCrud\\src\\AppCrud.Business\\AppCrud.Business.csproj",
-        "packagesPath": "C:\\Users\\tributojusto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tributojusto\\source\\repos\\AppCrud\\src\\AppCrud.Business\\obj\\",
+        "projectPath": "D:\\Estudos\\Projetos\\Tributos-justo-back-end\\src\\AppCrud.Business\\AppCrud.Business.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\Estudos\\Projetos\\Tributos-justo-back-end\\src\\AppCrud.Business\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\tributojusto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,8 +55,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,21 +64,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tributojusto\\source\\repos\\AppCrud\\src\\AppCrud.Data\\AppCrud.Data.csproj": {
+    "D:\\Estudos\\Projetos\\Tributos-justo-back-end\\src\\AppCrud.Data\\AppCrud.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tributojusto\\source\\repos\\AppCrud\\src\\AppCrud.Data\\AppCrud.Data.csproj",
+        "projectUniqueName": "D:\\Estudos\\Projetos\\Tributos-justo-back-end\\src\\AppCrud.Data\\AppCrud.Data.csproj",
         "projectName": "AppCrud.Data",
-        "projectPath": "C:\\Users\\tributojusto\\source\\repos\\AppCrud\\src\\AppCrud.Data\\AppCrud.Data.csproj",
-        "packagesPath": "C:\\Users\\tributojusto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tributojusto\\source\\repos\\AppCrud\\src\\AppCrud.Data\\obj\\",
+        "projectPath": "D:\\Estudos\\Projetos\\Tributos-justo-back-end\\src\\AppCrud.Data\\AppCrud.Data.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\Estudos\\Projetos\\Tributos-justo-back-end\\src\\AppCrud.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\tributojusto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,8 +96,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tributojusto\\source\\repos\\AppCrud\\src\\AppCrud.Business\\AppCrud.Business.csproj": {
-                "projectPath": "C:\\Users\\tributojusto\\source\\repos\\AppCrud\\src\\AppCrud.Business\\AppCrud.Business.csproj"
+              "D:\\Estudos\\Projetos\\Tributos-justo-back-end\\src\\AppCrud.Business\\AppCrud.Business.csproj": {
+                "projectPath": "D:\\Estudos\\Projetos\\Tributos-justo-back-end\\src\\AppCrud.Business\\AppCrud.Business.csproj"
               }
             }
           }
@@ -130,8 +137,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -140,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

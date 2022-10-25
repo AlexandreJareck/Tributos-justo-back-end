@@ -10,3 +10,15 @@ C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\obj\Debug\net6.0
 C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\obj\Debug\net6.0\refint\AppCrud.Business.dll
 C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.pdb
 C:\Users\tributojusto\source\repos\AppCrud\src\AppCrud.Business\obj\Debug\net6.0\ref\AppCrud.Business.dll
+D:\Estudos\Projetos\Tributos-justo-back-end\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.csproj.AssemblyReference.cache
+D:\Estudos\Projetos\Tributos-justo-back-end\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudos\Projetos\Tributos-justo-back-end\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.AssemblyInfoInputs.cache
+D:\Estudos\Projetos\Tributos-justo-back-end\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.AssemblyInfo.cs
+D:\Estudos\Projetos\Tributos-justo-back-end\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.csproj.CoreCompileInputs.cache
+D:\Estudos\Projetos\Tributos-justo-back-end\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.dll
+D:\Estudos\Projetos\Tributos-justo-back-end\src\AppCrud.Business\obj\Debug\net6.0\refint\AppCrud.Business.dll
+D:\Estudos\Projetos\Tributos-justo-back-end\src\AppCrud.Business\obj\Debug\net6.0\AppCrud.Business.pdb
+D:\Estudos\Projetos\Tributos-justo-back-end\src\AppCrud.Business\bin\Debug\net6.0\AppCrud.Business.deps.json
+D:\Estudos\Projetos\Tributos-justo-back-end\src\AppCrud.Business\bin\Debug\net6.0\AppCrud.Business.dll
+D:\Estudos\Projetos\Tributos-justo-back-end\src\AppCrud.Business\bin\Debug\net6.0\AppCrud.Business.pdb
+D:\Estudos\Projetos\Tributos-justo-back-end\src\AppCrud.Business\obj\Debug\net6.0\ref\AppCrud.Business.dll
