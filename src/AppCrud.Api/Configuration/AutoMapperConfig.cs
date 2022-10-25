@@ -11,6 +11,8 @@ namespace MoneyControl.App.Configuration
         {
             CreateMap<Client, ClientDTO>().ReverseMap();
             CreateMap<Product, ProductDTO>().ReverseMap();
+            CreateMap<Order, OrderDTO>().ReverseMap();
+            CreateMap<OrderItem, OrderItemDTO>().ReverseMap();
         }
     }
 }
