@@ -57,5 +57,18 @@ namespace AppCrud.Api.Controllers
 
             return CustomResponse(orderDTO);
         }
+
+        [HttpDelete("{id:guid}")]
+        public async Task<ActionResult<OrderDTO>> Remove(Guid id)
+        {
+            var orderDTO = _mapper.Map<OrderDTO>(await _orderRepository.GetById(id));
+
+            if (orderDTO == null)
+                return NotFound();
+
+            await _orderService.Remove(id);
+
+            return CustomResponse();
+        }
     }
 }
