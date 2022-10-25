@@ -70,5 +70,34 @@ namespace AppCrud.Api.Controllers
 
             return CustomResponse();
         }
+
+        [HttpPost]
+        public async Task<ActionResult> AddItem(OrderItem item)
+        {
+            //var order = await _orderRepository.GetById(item.OrderId);
+
+            //if(order == null)
+            //{
+            //    var newOrder = new Order();
+            //    newOrder.AddItem(item);
+
+            //    await _orderService.Add(newOrder);
+
+            //    return CustomResponse();
+            //}
+
+            //var existingItem = order.ExistingOrder(item);
+
+            //if (existingItem)
+            //{
+            //    order.UpdateQuantity(item);
+            //}
+            //else
+            //{
+            //    order.AddItem(item);
+            //}
+
+            return CustomResponse();
+        }
     }
 }

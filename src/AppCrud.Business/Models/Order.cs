@@ -30,6 +30,7 @@ public class Order : Entity
         }
 
         Items.Add(item);
+        CalculateTotal();
     }    
     public void RemoveItem(OrderItem item)
     {
@@ -44,6 +45,16 @@ public class Order : Entity
         TotalValue = Items.Sum(p => p.CalculateValue());
     }
 
+    public OrderItem GetByProductId(Guid productId)
+    {
+        return Items.FirstOrDefault(p => p.ProductId == productId);
+    }
+
+    public void UpdateQuantity(OrderItem item)
+    {
+        Items.FirstOrDefault(p => p.ProductId == item.ProductId).Quantity = item.Quantity;
+    }
+
     public bool ExistingOrder(OrderItem item)
     {
         return Items.Any(p => p.ProductId == item.ProductId);
@@ -51,6 +62,6 @@ public class Order : Entity
     private void ValidationOrderItemNonExistent(OrderItem item)
     {
         if (!ExistingOrder(item))
-            throw new Exception("O item não pertence ao pedido");
+            throw new Exception("O item não faz parte desse pedido");
     }
 }
